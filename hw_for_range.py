@@ -4,15 +4,15 @@ def rep_construction(message):
     print("#"*150 + "\n")
     print(message + "\n")
     print("#"*150 + "\n")
-rep_construction("Start APP")
+rep_construction("Start APP. WELCOME!" + "\n" + "Create a number range!")
 
 
 def inputInt(message):  # hw1: functia inputint
     my_nr = int(input(message))
     return int(my_nr)
 
-start_value = inputInt("Start: ")
-end_value = inputInt("End: ")
+start_value = inputInt("Enter the first number to create a number range: ")
+end_value = inputInt("Enter the second number to create a number range: ")
 # hw3: directia 1 - 100
 if start_value < end_value-1:
     rep_construction("Diapason of values")
