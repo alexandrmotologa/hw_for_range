@@ -1,13 +1,13 @@
 # hw2: creati o functie pentru codul care se repeta + spatii
-def rep_construction( message ):
+def rep_construction(message):
     print()
     print("#"*150 + "\n")
     print(message + "\n")
     print("#"*150 + "\n")
 rep_construction("Start APP")
 
-# hw1: functia inputint
-def inputInt(message):
+
+def inputInt(message):  # hw1: functia inputint
     my_nr = int(input(message))
     return int(my_nr)
 
@@ -38,7 +38,7 @@ if start_value < end_value-1:
     print()
 
     rep_construction("Finish APP")
-    
+
 # hw3: daca este introdus nr apropiat unul de altul 47-48
 if start_value == end_value-1 or start_value == end_value:
     print("Error, little diapason")
@@ -46,7 +46,7 @@ if start_value == end_value-1 or start_value == end_value:
 if start_value > end_value:
     rep_construction("Diapason of values")
 
-    #hw3: directia 100 - 1
+# hw3: directia 100 - 1
     for x in reversed(range(end_value, start_value+1)):
         print(x, end=" ")
     print()
